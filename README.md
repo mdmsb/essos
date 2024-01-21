@@ -1,3 +1,13 @@
+# Follow these steps to Contribute
+
+### `git pull`
+ - make your changes
+### `git commit -m "notes"`
+### `git push`
+### `npm run build`
+ - your build is live
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
