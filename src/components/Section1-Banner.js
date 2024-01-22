@@ -1,7 +1,7 @@
 import React from "react";
-import product3 from'../images/products/3.jpg';
-import product2 from'../images/products/2.jpg';
-import product1 from'../images/products/1.jpg';
+import product3 from'../images/ground3.jpeg';
+import product2 from'../images/ground2.jpeg';
+import product1 from'../images/ground1.jpg';
 
 function Section1() {
     const imagesStyle = (position1, position2) => ({
