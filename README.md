@@ -4,8 +4,8 @@
  - make your changes
 ### `git commit -m "notes"`
 ### `git push`
-### `npm run build`
- - your build is live
+### `npm run deploy`
+ - thes will build and deploy to gh-pages and is live
 
 
 # Getting Started with Create React App
