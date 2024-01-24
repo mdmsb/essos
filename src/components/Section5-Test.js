@@ -21,7 +21,7 @@ function Section5() {
                     <p className="bg-dark border rounded border-dark p-4">Outstanding facilities and top-notch service!</p>
                     <div className="d-flex"><img className="rounded-circle flex-shrink-0 me-3 fit-cover" width="50" height="50" alt="" src={av2} />
                         <div>
-                            <p className="fw-bold text-primary mb-0">John Smith</p>
+                            <p className="fw-bold text-primary mb-0">Zaid</p>
                         </div>
                     </div>
                 </div>
@@ -31,7 +31,7 @@ function Section5() {
                     <p className="bg-dark border rounded border-dark p-4">Unmatched sports experience, highly recommended!.</p>
                     <div className="d-flex"><img className="rounded-circle flex-shrink-0 me-3 fit-cover" width="50" height="50" alt="" src={av4} />
                         <div>
-                            <p className="fw-bold text-primary mb-0">John Smith</p>
+                            <p className="fw-bold text-primary mb-0">Usman</p>
                         </div>
                     </div>
                 </div>
@@ -41,7 +41,7 @@ function Section5() {
                     <p className="bg-dark border rounded border-dark p-4">A go-to destination for sports enthusiasts.</p>
                     <div className="d-flex"><img className="rounded-circle flex-shrink-0 me-3 fit-cover" width="50" height="50" alt="" src={av5} />
                         <div>
-                            <p className="fw-bold text-primary mb-0">John Smith</p>
+                            <p className="fw-bold text-primary mb-0">Mus'ab</p>
                         </div>
                     </div>
                 </div>
