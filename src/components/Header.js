@@ -42,32 +42,32 @@ function Header() {
         <div id="navcol-1" className="collapse navbar-collapse">
           <ul className="navbar-nav mx-auto">
             <li className="nav-item">
-              <a className="nav-link active" href="index.html">
+              <a className="nav-link active" href="#Section1">
                 Home
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="services.html">
+              <a className="nav-link" href="#Section3">
                 Services
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="projects.html">
-                Projects
+              <a className="nav-link" href="#Section4">
+                Offerings
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="pricing.html">
-                Pricing
+              <a className="nav-link" href="#Section5">
+                Testimonials
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="contacts.html">
+              <a className="nav-link" href="#Section6">
                 Contacts
               </a>
             </li>
           </ul>
-          <a className="btn btn-primary shadow" role="button" href="signup.html">
+          <a className="btn btn-primary shadow" role="button" href="#Section7">
             Sign up
           </a>
         </div>

@@ -14,11 +14,11 @@ function Section2() {
     <section className="py-5">
       <div className="container text-center py-5">
         <p className="mb-4" style={fontSize1}>
-          Used by{" "}
+          Join the League of{" "}
           <span className="text-success">
             <strong>2400+</strong>
           </span>
-           of the best companies in the world.
+           Satisfied Customers.
         </p>
         <a href="/">
           <img className="m-3" src={brand1} alt="" />

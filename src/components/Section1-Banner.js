@@ -12,14 +12,14 @@ function Section1() {
 
     const imagesContainer = {"display": "flex","flexWrap": "wrap","justifyContent": "flex-end",};
   return (
-    <header className="bg-dark">
+    <header className="bg-dark" id="Section1">
       <div className="container pt-4 pt-xl-5">
         <div className="row pt-5">
           <div className="col-md-8 col-xl-6 text-center text-md-start mx-auto">
             <div className="text-center">
-              <p className="fw-bold text-success mb-2">Voted #1 Worldwide</p>
+              <p className="fw-bold text-success mb-2">Welcome to ESSOS Cricket and Football Ground</p>
               <h1 className="fw-bold">
-                The best solution for you and your customers
+                Experience Unrivaled Sporting Excellence
               </h1>
             </div>
           </div>
