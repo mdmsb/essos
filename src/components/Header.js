@@ -67,7 +67,7 @@ function Header() {
               </a>
             </li>
           </ul>
-          <a className="btn btn-primary shadow" role="button" href="#Section7">
+          <a className="btn btn-primary shadow" role="button" href="/signup">
             Sign up
           </a>
         </div>

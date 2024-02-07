@@ -1,6 +1,25 @@
 import React from "react";
+import emailjs from "emailjs-com";
 
 function Section6() {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    emailjs
+      .sendForm(
+        "service_65q9gw1",
+        "template_op4e30x",
+        "#myForm",
+        "iFnp6ffwzqThzwe5H"
+      )
+      .then(
+        (response) => {
+          console.log("SUCCESS!", response.status, response.text);
+        },
+        (error) => {
+          console.log("FAILED...", error);
+        }
+      );
+  };
   return (
     <section className="py-5" id="Section6">
       <div className="container">
@@ -13,14 +32,23 @@ function Section6() {
         <div className="row d-flex justify-content-center">
           <div className="col-md-6 col-xl-4">
             <div>
-              <form className="p-3 p-xl-4" method="post">
+              <form id="myForm" className="p-3 p-xl-4" onSubmit={handleSubmit}>
+                <input
+                  id="action-1"
+                  className="form-control"
+                  type="hidden"
+                  name="action"
+                  value="You have got an enquiry from"
+                  required
+                />
                 <div className="mb-3">
                   <input
                     id="name-1"
                     className="form-control"
                     type="text"
-                    name="name"
+                    name="user_name"
                     placeholder="Name"
+                    required
                   />
                 </div>
                 <div className="mb-3">
@@ -28,8 +56,19 @@ function Section6() {
                     id="email-1"
                     className="form-control"
                     type="email"
-                    name="email"
+                    name="from_email"
                     placeholder="Email"
+                    required
+                  />
+                </div>
+                <div className="mb-3">
+                  <input
+                    id="mobile-1"
+                    className="form-control"
+                    type="number"
+                    name="mobile"
+                    placeholder="Mobile Number"
+                    required
                   />
                 </div>
                 <div className="mb-3">
@@ -39,6 +78,7 @@ function Section6() {
                     name="message"
                     rows="6"
                     placeholder="Message"
+                    required
                   ></textarea>
                 </div>
                 <div>
@@ -108,7 +148,9 @@ function Section6() {
                 </div>
                 <div className="px-2">
                   <h6 className="fw-bold mb-0">Location</h6>
-                  <p className="text-muted mb-0">14th Main Rd, Balaji Layout, Dasarahalli, Bengaluru 560092</p>
+                  <p className="text-muted mb-0">
+                    14th Main Rd, Balaji Layout, Dasarahalli, Bengaluru 560092
+                  </p>
                 </div>
               </div>
             </div>
