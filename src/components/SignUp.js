@@ -1,7 +1,16 @@
 import React from "react";
 import emailjs from "emailjs-com";
+import { useNavigate  } from 'react-router-dom';
 
 function SignUp() {
+    
+
+    let navigate = useNavigate(); 
+
+    const navigateToPath = () => {
+      navigate('/signupsuccess');
+    };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     const formData = new FormData(e.target);
@@ -39,23 +48,23 @@ function SignUp() {
 
     const comb_string = `\n\nteam_name: ${team_name}\ncaptain_name: ${captain_name}\nphone_number: ${phone_number}\nemail: ${email}\naddress: ${address}\ncity: ${city}\nstate_province: ${state_province}\npostal: ${postal}\nexperience: ${experience}\nposition_radio: ${position_radio}\ntourn_radio: ${tourn_radio}\nplayer1: ${player1}\nplayer1_number: ${player1_number}\nplayer2: ${player2}\nplayer2_number: ${player2_number}\nplayer3: ${player3}\nplayer3_number: ${player3_number}\nplayer4: ${player4}\nplayer4_number: ${player4_number}\nplayer5: ${player5}\nplayer5_number: ${player5_number}\nplayer6: ${player6}\nplayer6_number: ${player6_number}\nplayer7: ${player7}\nplayer7_number: ${player7_number}\nplayer8: ${player8}\nplayer8_number: ${player8_number}\nplayer9: ${player9}\nplayer9_number: ${player9_number}\nplayer10: ${player10}\nplayer10_number: ${player10_number}`;
 
-    const dummyForm = document.createElement('form');
+    const dummyForm = document.createElement("form");
 
     const appendHiddenField = (name, value) => {
-        const hiddenField = document.createElement('input');
-        hiddenField.type = 'hidden';
-        hiddenField.name = name;
-        hiddenField.value = value;
-        dummyForm.appendChild(hiddenField);
-      };
+      const hiddenField = document.createElement("input");
+      hiddenField.type = "hidden";
+      hiddenField.name = name;
+      hiddenField.value = value;
+      dummyForm.appendChild(hiddenField);
+    };
 
+    appendHiddenField("user_name", team_name);
+    appendHiddenField("action", "Your have tournament signup from");
+    appendHiddenField("from_email", email);
+    appendHiddenField("mobile", phone_number);
+    appendHiddenField("message", comb_string);
 
-    appendHiddenField('user_name', team_name);
-    appendHiddenField('action', "Your have tournament signup from");
-    appendHiddenField('from_email', email);
-    appendHiddenField('mobile', phone_number);
-    appendHiddenField('message', comb_string);
-
+    
     emailjs
       .sendForm(
         "service_65q9gw1",
@@ -65,6 +74,7 @@ function SignUp() {
       )
       .then(
         (response) => {
+            navigateToPath();
           console.log("SUCCESS!", response.status, response.text);
         },
         (error) => {
@@ -573,6 +583,9 @@ function SignUp() {
           </div>
         </div>
       </div>
+      
+      {/* <button onClick={navigateToPath}>Navigate to Another Path</button> */}
+   
     </section>
   );
 }
