@@ -46,7 +46,7 @@ function SignUp() {
     const player10 = formData.get("player10");
     const player10_number = formData.get("player10_number");
 
-    const comb_string = `\n\nteam_name: ${team_name}\ncaptain_name: ${captain_name}\nphone_number: ${phone_number}\nemail: ${email}\naddress: ${address}\ncity: ${city}\nstate_province: ${state_province}\npostal: ${postal}\nexperience: ${experience}\nposition_radio: ${position_radio}\ntourn_radio: ${tourn_radio}\nplayer1: ${player1}\nplayer1_number: ${player1_number}\nplayer2: ${player2}\nplayer2_number: ${player2_number}\nplayer3: ${player3}\nplayer3_number: ${player3_number}\nplayer4: ${player4}\nplayer4_number: ${player4_number}\nplayer5: ${player5}\nplayer5_number: ${player5_number}\nplayer6: ${player6}\nplayer6_number: ${player6_number}\nplayer7: ${player7}\nplayer7_number: ${player7_number}\nplayer8: ${player8}\nplayer8_number: ${player8_number}\nplayer9: ${player9}\nplayer9_number: ${player9_number}\nplayer10: ${player10}\nplayer10_number: ${player10_number}`;
+    const comb_string = `\n\nteam_name: ${team_name}\ncaptain_name: ${captain_name}\nphone_number: ${phone_number}\nemail: ${email}\naddress: ${address}\ncity: ${city}\nstate_province: ${state_province}\npostal: ${postal}\nexperience: ${experience}\pref_position: ${position_radio}\nplayed_before: ${tourn_radio}\nplayer1: ${player1}\nplayer1_number: ${player1_number}\nplayer2: ${player2}\nplayer2_number: ${player2_number}\nplayer3: ${player3}\nplayer3_number: ${player3_number}\nplayer4: ${player4}\nplayer4_number: ${player4_number}\nplayer5: ${player5}\nplayer5_number: ${player5_number}\nplayer6: ${player6}\nplayer6_number: ${player6_number}\nplayer7: ${player7}\nplayer7_number: ${player7_number}\nplayer8: ${player8}\nplayer8_number: ${player8_number}\nplayer9: ${player9}\nplayer9_number: ${player9_number}\nplayer10: ${player10}\nplayer10_number: ${player10_number}`;
 
     const dummyForm = document.createElement("form");
 
@@ -192,6 +192,7 @@ function SignUp() {
                       id="formCheck-1"
                       className="form-check-input"
                       type="radio"
+                      value="Batsman"
                     />
                     <label className="form-check-label" htmlFor="formCheck-1">
                       Batsman
@@ -203,6 +204,7 @@ function SignUp() {
                       id="formCheck-2"
                       className="form-check-input"
                       type="radio"
+                      value="Bowler"
                     />
                     <label className="form-check-label" htmlFor="formCheck-2">
                       Bowler
@@ -214,6 +216,7 @@ function SignUp() {
                       id="formCheck-3"
                       className="form-check-input"
                       type="radio"
+                      value="All-Rounder"
                     />
                     <label className="form-check-label" htmlFor="formCheck-3">
                       All-Rounder
@@ -225,6 +228,7 @@ function SignUp() {
                       id="formCheck-4"
                       className="form-check-input"
                       type="radio"
+                      value="Wicket Keeper"
                     />
                     <label className="form-check-label" htmlFor="formCheck-4">
                       Wicket Keeper
@@ -239,6 +243,7 @@ function SignUp() {
                       id="formCheck-5"
                       className="form-check-input"
                       type="radio"
+                      value="Yes"
                     />
                     <label className="form-check-label" htmlFor="formCheck-5">
                       Yes
@@ -250,6 +255,7 @@ function SignUp() {
                       id="formCheck-6"
                       className="form-check-input"
                       type="radio"
+                      value="No"
                     />
                     <label className="form-check-label" htmlFor="formCheck-6">
                       No
