@@ -10,9 +10,9 @@ function SignUpSuccess() {
             <p class="mb-0">We will get back to you shortly.</p>
           </div>
             <div class="my-2">
-              <button class="btn btn-primary shadow ms-2" type="submit">
+              <a class="btn btn-primary shadow ms-2" href="/">
                 Home{" "}
-              </button>
+              </a>
             </div>
         </div>
       </div>
