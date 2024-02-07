@@ -111,7 +111,7 @@ function SignUp() {
                       className="form-check-input"
                       type="radio"
                     />
-                    <label className="form-check-label" for="formCheck-1">
+                    <label className="form-check-label" htmlFor="formCheck-1">
                       Batsman
                     </label>
                   </div>
@@ -121,7 +121,7 @@ function SignUp() {
                       className="form-check-input"
                       type="radio"
                     />
-                    <label className="form-check-label" for="formCheck-2">
+                    <label className="form-check-label" htmlFor="formCheck-2">
                       Bowler
                     </label>
                   </div>
@@ -131,7 +131,7 @@ function SignUp() {
                       className="form-check-input"
                       type="radio"
                     />
-                    <label className="form-check-label" for="formCheck-3">
+                    <label className="form-check-label" htmlFor="formCheck-3">
                       All-Rounder
                     </label>
                   </div>
@@ -141,7 +141,7 @@ function SignUp() {
                       className="form-check-input"
                       type="radio"
                     />
-                    <label className="form-check-label" for="formCheck-4">
+                    <label className="form-check-label" htmlFor="formCheck-4">
                       Wicket Keeper
                     </label>
                   </div>
@@ -154,7 +154,7 @@ function SignUp() {
                       className="form-check-input"
                       type="radio"
                     />
-                    <label className="form-check-label" for="formCheck-5">
+                    <label className="form-check-label" htmlFor="formCheck-5">
                       Yes
                     </label>
                   </div>
@@ -164,7 +164,7 @@ function SignUp() {
                       className="form-check-input"
                       type="radio"
                     />
-                    <label className="form-check-label" for="formCheck-6">
+                    <label className="form-check-label" htmlFor="formCheck-6">
                       No
                     </label>
                   </div>
