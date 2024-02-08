@@ -564,7 +564,6 @@ function SignUp() {
                         bowling).
                       </li>
                       <li>Only Straight boundaries for 4's and 6's.</li>
-                      <li>Only 1 bowler can bowl 2 overs.</li>
                       <li>
                         Batsmen will be given out if the ball is caught after
                         touching the top net.
@@ -573,6 +572,7 @@ function SignUp() {
                       <li>Over-throw runs are allowed.</li>
                       <li>No runs will be given for Byes and Leg Byes.</li>
                       <li>Only CLEAN ARM BOWLING is allowed.</li>
+                      <li>Only 1 bowler can bowl 2 overs.</li>
                       <li>Umpires decision will be final.</li>
                       <li>No Free-Hit for No-Balls.</li>
                     </ol>
