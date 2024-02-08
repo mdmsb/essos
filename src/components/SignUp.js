@@ -564,6 +564,7 @@ function SignUp() {
                         bowling).
                       </li>
                       <li>Only Straight boundaries for 4's and 6's.</li>
+                      <li>Only 1 bowler can bowl 2 overs.</li>
                       <li>
                         Batsmen will be given out if the ball is caught after
                         touching the top net.
